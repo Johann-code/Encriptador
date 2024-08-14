@@ -4,7 +4,11 @@ function enc() {
     var crip = btoa(texto);
     imprimir.innerText = crip
     if (texto === "") {
-        alert("NO HAS ESCRITO NADA")
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+          });
     } 
 }
 function des() {
@@ -13,7 +17,11 @@ function des() {
     var descrip = atob(takataka);
     imprimir.innerHTML = descrip
     if (takataka === "") {
-        alert("NO HAS ESCRITO NADA")
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+          });
     } 
 }
 
