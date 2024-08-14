@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Encriptador</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <link href="Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header >
+    <h1 style="line-height: 20px; margin-top: 50px;">Encriptador de Textos</h1>
+  </header>
+  <main>
+    <h2 id="saludo" style="font-size: 25px; line-height: 10px; margin-top: 10px;"></h2>
+    <h2 style="line-height: 5px; font-size: 20px;"><b>¿Qué vas a escribir hoy?</b></h2>
+    <br>
+    <button onclick="enc()" class="encrip">Encriptar</button>
+    <button onclick="des()" class="desen">Desencriptar</button>
+    <br>
+    <textarea name="texto" id="textito" placeholder="Ingresa texto aquí."></textarea>
+    <textarea name="texto" id="flor" disabled></textarea>
+
+    <div>
+      <button type="button" onclick="registrar()">Iniciar Sesión</button>
+    </div>
+    
+  </main>
+  <footer>
+    <p>
+      &copy; La Familia Peluche
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
