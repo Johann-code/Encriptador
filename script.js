@@ -3,13 +3,18 @@ function enc() {
     var imprimir = document.getElementById("flor");
     var crip = btoa(texto);
     imprimir.innerText = crip
-
+    if (texto === "") {
+        alert("NO HAS ESCRITO NADA")
+    } 
 }
 function des() {
     var takataka = document.getElementById("textito").value;
     var imprimir = document.getElementById("flor");
     var descrip = atob(takataka);
     imprimir.innerHTML = descrip
+    if (takataka === "") {
+        alert("NO HAS ESCRITO NADA")
+    } 
 }
 
 function guardar() {
