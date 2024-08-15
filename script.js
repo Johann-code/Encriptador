@@ -5,9 +5,9 @@ function enc() {
     imprimir.innerText = crip
     if (texto === "") {
         Swal.fire({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success"
+            icon: "error",
+            title: "Oops...",
+            text: "¡No puedo trabajar sin un texto!",
           });
     } 
 }
@@ -18,9 +18,9 @@ function des() {
     imprimir.innerHTML = descrip
     if (takataka === "") {
         Swal.fire({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success"
+            icon: "error",
+            title: "Oops...",
+            text: "¡No puedo trabajar sin un texto!",
           });
     } 
 }
