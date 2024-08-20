@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Cuenta</title>
+    <link rel="shortcut icon" href="purple-flower-thin-petals-flat-615439.webp" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +27,14 @@
     <br><br><br><br><br><br><br>
 
     <main>
+      <div class="error">
+        <span id="negacion"></span>    
+        </div>
     <div class="iniar_sesion">
     <label for="user" style="font-size: 20px; display: block; line-height: 40px;">Nombre de Usuario:</label>
-    <input type="text" id="new_user" style="font-size: 20px; border: none; padding: 5px 10px; border-radius: 20px;"><br>
+    <input type="text" id="new_user" style="font-size: 20px; border: none; padding: 5px 10px; border-radius: 20px;" required><br>
     <label for="contra" style="font-size: 20px; display: block; line-height: 40px;">Contraseña</label>
-    <input type="password" name="" id="new_contra" style="font-size: 20px; border: none; padding: 5px 10px; border-radius: 20px;"><br>
+    <input required type="password" name="" id="new_contra" style="font-size: 20px; border: none; padding: 5px 10px; border-radius: 20px;"><br>
     <br><br>
     <button onclick="guardar()">Guardar</button>
     </div>

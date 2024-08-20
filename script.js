@@ -28,9 +28,15 @@ function des() {
 function guardar() {
     var usuario = document.getElementById("new_user").value;
     var contraseña = document.getElementById("new_contra").value;
-    localStorage.setItem ("name", usuario);
+    var negacion = document.getElementById("negacion");
+    if (usuario === "" || contraseña === "") {
+    let no = "Debes rellenar tus datos para crear cuenta."
+    negacion.innerHTML = no;
+    } else {
+        localStorage.setItem ("name", usuario);
     localStorage.setItem ("password", contraseña);
     window.location = "index.html";
+    }
 }
 
 // function probando() {
@@ -46,13 +52,15 @@ function inicio() {
     let contra = document.getElementById("contra").value;
     var prueba = document.getElementById("prueba");
     let nop = "Usuario o contraseña no encontrados. Si no estás registrado create una cuenta."
-    
-    if (user === localStorage.getItem ("name") && contra === localStorage.getItem ("password")) {
+    if (user === "" || contra === "") {
+        prueba.innerHTML = nop
+    } else {
+      if (user === localStorage.getItem ("name") && contra === localStorage.getItem ("password")) {
         window.location = "encriptador.html"
     } else {
         prueba.innerHTML = nop
+    }  
     }
-    
 }
 function cuenta_nueva() {
     window.location = "crearcuenta.html"
